@@ -2,7 +2,18 @@
 Nom du fichier: get_pdf_from_corpus.py
 Auteurs: Stéphane Lamassé et Pierre Lebec 
 Date de création: 9 décembre 2023
-Description: Ce script fait...
+Description: Le script est destiné à télécharger des fichiers PDF de Gallica 
+(la bibliothèque numérique de la Bibliothèque nationale de France), 
+basé sur les ARK des manuscrits fournis dans un fichier CSV dans le répertoire Corpus. 
+Les fichiers PDF sont ensuite divisés en pages individuelles, et les informations sur 
+les opérations effectuées (ou les erreurs rencontrées) sont enregistrées dans un fichier journal.
+fonctions définies :
+    - create_directory_if_not_exists(directory_path): Crée un répertoire s'il n'existe pas déjà.
+    - download_file(url, destination_path): Télécharge un fichier depuis une URL donnée et le sauvegarde localement.
+    - split_pdf(input_pdf, path): Divise un fichier PDF en pages individuelles.
+    - getfile_ark_and_write(ark, logfile, direct): Télécharge un fichier PDF depuis une URL basée sur l'ARK, 
+    le divise en pages, et enregistre le fichier résultant. 
+    Gère également les erreurs et écrit les ARK ayant échoué dans un fichier journal.
 """
 
 import os
