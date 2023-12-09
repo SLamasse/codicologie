@@ -1,3 +1,10 @@
+"""
+Nom du fichier: get_pdf_from_corpus.py
+Auteurs: Stéphane Lamassé et Pierre Lebec 
+Date de création: 9 décembre 2023
+Description: Ce script fait...
+"""
+
 import os
 import re
 import csv
