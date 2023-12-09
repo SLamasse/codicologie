@@ -1,4 +1,4 @@
-# codicologie
+# Codicologie
 
 
 Il s'agit d'un ensemble de scripts que nous maintenons pour le projet **Robocodico**. 
