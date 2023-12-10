@@ -45,7 +45,6 @@ def split_pdf(input_pdf, path):
         # Parcourir chaque page et enregistrer individuellement
         for page_num in range(len(pdf_reader.pages)):
             # on enlève pages présentation bnf
-            if page_num>3:
                 # Créer un objet
                 pdf_writer = PyPDF2.PdfWriter()
                 # Ajouter la page actuelle au nouveau PDF
