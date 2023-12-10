@@ -14,7 +14,7 @@ fonctions définies :
     - getfile_ark_and_write(ark, logfile, direct): Télécharge un fichier PDF depuis une URL basée sur l'ARK, 
     le divise en pages, et enregistre le fichier résultant. 
     Gère également les erreurs et écrit les ARK ayant échoué dans un fichier journal.
-
+'''
 import os
 import re
 import csv
