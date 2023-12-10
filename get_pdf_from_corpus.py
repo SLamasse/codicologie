@@ -1,4 +1,4 @@
-"""
+'''
 Nom du fichier: get_pdf_from_corpus.py
 Auteurs: Stéphane Lamassé et Pierre Lebec 
 Date de création: 9 décembre 2023
@@ -14,7 +14,6 @@ fonctions définies :
     - getfile_ark_and_write(ark, logfile, direct): Télécharge un fichier PDF depuis une URL basée sur l'ARK, 
     le divise en pages, et enregistre le fichier résultant. 
     Gère également les erreurs et écrit les ARK ayant échoué dans un fichier journal.
-"""
 
 import os
 import re
