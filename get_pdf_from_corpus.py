@@ -20,6 +20,7 @@ import os
 import re
 import csv
 import requests
+import urllib.request as url_req
 from PyPDF2 import PdfFileWriter
 import PyPDF2
 
@@ -102,7 +103,7 @@ def getfile_ark_img_write(ark, logfile, direct):
         if os.path.isdir(path):
             print(f"Le répertoire {ark} existe déjà.")
         else:
-            create_directory(path)
+            create_directory_if_not_exists(path)
             to_ark = ark.replace("_", "/", 1)
             for i in range(1, get_number_pages(ark) + 1):
                 url = "https://gallica.bnf.fr/ark:/" + to_ark + "/f" + str(i) + ".item/.jpeg"
@@ -137,7 +138,6 @@ def getfile_ark_pdf_write(ark, logfile, direct):
 def main():
     chemin = "./Corpus/"
     logfile_path = "./log/mms_not_download.txt"
-
     with open(logfile_path, 'a') as logfile:
         with open(os.path.join(chemin, "liste_mss_num_ark.txt"), 'r') as csvfile:
             reader = csv.reader(csvfile, delimiter=';')
@@ -146,7 +146,7 @@ def main():
                     # manipulation un peu idiote liée au fichier initiale
                     ark = re.sub("^https:\/\/gallica\.bnf\.fr\/ark:\/(.+)\/", "\\1_", row[1])
                     getfile_ark_img_write(ark, logfile, chemin)
-                    getfile_ark_pdf_write(ark, logfile, chemin)
+ #                   getfile_ark_pdf_write(ark, logfile, chemin)
                 else:
                     print(f"Le manuscrit {row[0]} dont l'ARK est {row[1]} n'a pas pu être téléchargé")
                     logfile.write(f"{row[1]}\n")
