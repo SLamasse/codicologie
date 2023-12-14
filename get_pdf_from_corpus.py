@@ -67,7 +67,54 @@ def split_pdf(input_pdf, path):
     os.remove(input_pdf)
 
 
-def getfile_ark_and_write(ark, logfile, direct):
+def get_number_pages(ark):
+    """
+    str -> int
+    Returns the number of pages of a manuscript
+    given its ark identifier
+    If this number of pages couldn't be found
+    returns -1
+    """
+
+    url_base = "https://gallica.bnf.fr/ark:/"
+    url_ark = ark.replace('_', '/', 1)
+    url = url_base + url_ark
+
+    page = url_req.urlopen(url)
+
+    view = re.search("vue 1/\d+", str(page.read()))
+    if view:
+        split_view = re.split("/", view.group(0))
+        if len(split_view) == 2:
+            return int(split_view[1])
+    
+    return -1
+    
+
+def getfile_ark_img_write(ark, logfile, direct):
+    """
+    str * str * str -> None
+    
+    """
+    try:
+        path = os.path.join(direct, ark)
+        if os.path.isdir(path):
+            print(f"Le répertoire {ark} existe déjà.")
+        else:
+            create_directory(path)
+            to_ark = ark.replace("_", "/", 1)
+            for i in range(1, get_number_pages(ark) + 1):
+                url = "https://gallica.bnf.fr/ark:/" + to_ark + "/f" + str(i) + ".item/.jpeg"
+                image_name = ark + "page" + str(i)
+                destination_path = os.path.join(path, f'{image_name}.jpeg')
+                download_image_file(url, destination_path)
+                print(f"La page {i} du manuscrit {ark} a été téléchargé avec succès.")
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur lors du traitement de l'ARK {ark}: {e}")
+        logfile.write(f"{ark}\n")
+
+
+def getfile_ark_pdf_write(ark, logfile, direct):
     try:
         path = os.path.join(direct, ark)
         if os.path.isdir(path):
@@ -97,7 +144,8 @@ def main():
                 if row[1] != "0":
                     # manipulation un peu idiote liée au fichier initiale
                     ark = re.sub("^https:\/\/gallica\.bnf\.fr\/ark:\/(.+)\/", "\\1_", row[1])
-                    getfile_ark_and_write(ark, logfile, chemin)
+                    getfile_ark_img_write(ark, logfile, chemin)
+                    getfile_ark_pdf_write(ark, logfile, chemin)
                 else:
                     print(f"Le manuscrit {row[0]} dont l'ARK est {row[1]} n'a pas pu être téléchargé")
                     logfile.write(f"{row[1]}\n")
