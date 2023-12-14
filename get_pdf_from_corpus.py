@@ -23,15 +23,21 @@ from PyPDF2 import PdfFileWriter
 import PyPDF2
 
 def create_directory_if_not_exists(directory_path):
-    """
+    '''
     str -> None
     Makes directory given directory_path
     if not exists else makes nothing
-    """
+    '''
     if not os.path.isdir(directory_path):
         os.makedirs(directory_path)
 
 def download_file(url, destination_path):
+    '''
+    str * str -> None
+    Downloads the image file at the adress url
+    in the destination_path directory
+    '''
+
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
     }
