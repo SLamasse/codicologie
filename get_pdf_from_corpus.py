@@ -11,7 +11,8 @@ fonctions définies :
     - create_directory_if_not_exists(directory_path): Crée un répertoire s'il n'existe pas déjà.
     - download_file(url, destination_path): Télécharge un fichier depuis une URL donnée et le sauvegarde localement.
     - split_pdf(input_pdf, path): Divise un fichier PDF en pages individuelles.
-    - getfile_ark_and_write(ark, logfile, direct): Télécharge un fichier PDF depuis une URL basée sur l'ARK, 
+    - getfile_ark_pdf_write(ark, logfile, direct): Télécharge un fichier PDF depuis une URL basée sur l'ARK, 
+    - getfile_ark_img_write(ark, logfile, direct): Télécharge les fichiers img depuis une URL basée sur l'ARK, 
     le divise en pages, et enregistre le fichier résultant. 
     Gère également les erreurs et écrit les ARK ayant échoué dans un fichier journal.
 '''
