@@ -109,7 +109,7 @@ def getfile_ark_img_write(ark, logfile, direct):
                 url = "https://gallica.bnf.fr/ark:/" + to_ark + "/f" + str(i) + ".item/.jpeg"
                 image_name = ark + "page" + str(i)
                 destination_path = os.path.join(path, f'{image_name}.jpeg')
-                download_image_file(url, destination_path)
+                download_filez(url, destination_path)
                 print(f"La page {i} du manuscrit {ark} a été téléchargé avec succès.")
     except requests.exceptions.RequestException as e:
         print(f"Erreur lors du traitement de l'ARK {ark}: {e}")
