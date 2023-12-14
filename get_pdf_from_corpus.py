@@ -23,6 +23,11 @@ from PyPDF2 import PdfFileWriter
 import PyPDF2
 
 def create_directory_if_not_exists(directory_path):
+    """
+    str -> None
+    Makes directory given directory_path
+    if not exists else makes nothing
+    """
     if not os.path.isdir(directory_path):
         os.makedirs(directory_path)
 
