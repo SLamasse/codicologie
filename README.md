@@ -23,9 +23,9 @@ Sur cette phase du projet les scripts ont été produits par Stéphane Lamassé 
 
 #### Processus
 
-> Recopie les images haute résolution ou pdf de la BnF à partir d'une liste de ark
-> correction de l'orientation et des images (*crop.py*)
-> on passe au traitement avec dhSegment ou Kraken 
+> 1. Recopie les images haute résolution ou pdf de la BnF à partir d'une liste de ark
+> 2. correction de l'orientation et des images (*crop.py*)
+> 3. on passe au traitement avec dhSegment ou Kraken 
 
 
 
