@@ -28,5 +28,3 @@ Sur cette phase du projet les scripts ont été produits par Stéphane Lamassé 
 > 3. on passe au traitement avec dhSegment ou Kraken 
 
 
-
---> recopie les images haute résiolution  ou pdf de la
