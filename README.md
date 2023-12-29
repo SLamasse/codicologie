@@ -11,11 +11,11 @@ Sur cette phase du projet les scripts ont été produits par Stéphane Lamassé 
 
 ### Structure générale 
 ```mermaid
-|-- img/ 
-|
-|             |-- model/
-|-- dhSegment |-- polylines/
-|             |-- log/ 
-|
-|-- resultats/ 
+|-- img/ ;
+|;
+|             |-- model/;
+|-- dhSegment |-- polylines/;
+|             |-- log/ ;
+|;
+|-- resultats/; 
 ```
