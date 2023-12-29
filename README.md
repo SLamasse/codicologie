@@ -10,7 +10,7 @@ Sur cette phase du projet les scripts ont été produits par Stéphane Lamassé 
 
 
 ### Structure générale 
-
+```mermaid
 |-- img/ 
 |
 |             |-- model/
@@ -18,3 +18,4 @@ Sur cette phase du projet les scripts ont été produits par Stéphane Lamassé 
 |             |-- log/ 
 |
 |-- resultats/ 
+```
