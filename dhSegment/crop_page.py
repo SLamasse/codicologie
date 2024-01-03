@@ -66,7 +66,7 @@ def main_crop(path, logfile_path):
                             crop(page_img, page_array, page_path, nb_page)
                             print("file:", page, "successfully reframed as page number", nb_page, "and", nb_page + 1)
                             nb_page += 2
-                        except OSError:
+                        except:
                             print("Error with the file or the directory during treatment of the pages", nb_page, "and",
                                   nb_page + 1, "of the", ark)
                             print("Pages", nb_page, "and", nb_page + 1, "had not been crop")
@@ -82,13 +82,14 @@ def main_crop(path, logfile_path):
                             page_img.save(page_path + "reframed/" + "page" + page_number_to_str(nb_page) + ".jpeg", "jpeg")
                             print("file:", page, "doesn't need to be reframed, set as page", nb_page)
                             nb_page += 1
-                        except OSError:
+                        except:
                             print("Error with the file or the directory during treatment of the pages", nb_page, "of the", ark)
                             print("Pages", nb_page, "has not been crop")
                             logfile.write("Error with the file or the directory during treatment of the pages " + str(nb_page) +
                                           " of the " + ark + "\n")
                             logfile.write("\tPages " + str(nb_page) + " has not been crop\n")
                             nb_page += 1
-            except OSError:
+            except:
                 print("Error during the treatment of the all manuscript", ark)
                 logfile.write("Error during the treatment of the all manuscript" + ark + "\n")
+        logfile.close()
