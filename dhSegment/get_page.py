@@ -100,9 +100,12 @@ def main_fetch_images(chemin, src, logfile_path):
     Updates the logfile at logfile_path and
     saves all the errors in
     '''
-    already_seen = set()
     with open(logfile_path, 'a') as logfile:
         with open(os.path.join(chemin, src), 'r') as csvfile:
+            already_seen = set()
+            path_images = chemin + "images/"
+            if not os.path.exists(path_images):
+                os.makedirs(path_images)
             reader = csv.reader(csvfile, delimiter=';')
             for row in reader:
                 try:
@@ -110,10 +113,11 @@ def main_fetch_images(chemin, src, logfile_path):
                         if row[1] != "0" and row[1] != "aucun lien vers une numérisation":
                             # manipulation un peu idiote liée au fichier initiale
                             ark = re.sub("^https:\/\/gallica\.bnf\.fr\/ark:\/(.+)\/", "\\1_", row[1])
-                            getfile_ark_and_write(ark, logfile, chemin)
+                            getfile_ark_and_write(ark, logfile, path_images)
                         else:
                             print(f"Le manuscrit {row[0]} dont l'ARK est {row[1]} n'a pas pu être téléchargé")
                             logfile.write(f"{row[1]}\n")
                         already_seen.add(row[0])
                 except OSError:
                     print("erreur dans le traitement du manuscrit", row[0])
+        logfile.close()
