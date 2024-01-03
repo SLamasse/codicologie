@@ -4,8 +4,6 @@ import re
 import numpy as np
 import os
 
-from page_segmentation import main_segmentation
-
 
 
 def df_of_textlines_coords(PAGE_dict):
@@ -422,15 +420,20 @@ def page_data_analysis(path, ark, list_PAGE_dict, list_raw_images):
     pages.to_csv(name, sep=';', header=True, index=True, encoding='utf-8')
 
 
-def main_page_analsis(path, path_models, logfile_analysis, logfile_segmentation):
+def main_page_analysis(path, data_dict, logfile_analysis):
     '''
     str * str * str * str -> None
     '''
     with open(logfile_analysis, 'a') as logfile:
-        path_df = path + "pages_data/"
-        list_ark = [ark for ark in os.listdir(path) if os.path.isdir(path + ark)]
+        path_df = path + "resultats/"
+        list_ark = [ark for ark in os.listdir(path + "images/") if os.path.isdir(path + "images/" + ark) and ark != ".ipynb_checkpoints"]
         for ark in list_ark:
-            path_ark = path + ark + "reframed/"
-            list_raw_images = [page for page in os.listdir(path_ark) if not os.path.isdir(path_ark + page)]
-            list_PAGE_dict = main_segmentation(path_ark, path_models, logfile_segmentation)
-            page_data_analysis(path_df, ark, list_PAGE_dict, list_raw_images)
+            try:
+                path_images = path + "images/" + ark + "/reframed/"
+                data_ark = data_dict[ark]
+                list_raw_images = [img for img in os.listdir(path_images) if not os.path.isdir(path_images + img)]
+                page_data_analysis(path_df, ark, data_ark, list_raw_images)
+            except:
+                print("Error during treatment of the manuscript", ark)
+                logfile.write("Error during treatment of the manuscript " + ark + "\n")
+        logfile.close()
