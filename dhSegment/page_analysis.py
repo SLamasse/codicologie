@@ -32,18 +32,25 @@ def df_of_textlines_coords(PAGE_dict):
     return df
 
 
-def list_df_textlines_coords(list_PAGE_dict):
+def list_df_textlines_coords(ark, list_PAGE_dict, logfile):
     '''
     List[Dict[]] -> List[pandas.DataFrame]
     Returns a list of dataframes of lines coordiantes
     from a list of PAGE_dict
     '''
+    i = 1
     list_df = []
-
     for PAGE_dict in list_PAGE_dict:
-        df = df_of_textlines_coords(PAGE_dict)
-        list_df.append(df)
-
+        try:
+            df = df_of_textlines_coords(PAGE_dict)
+            list_df.append(df)
+            i += 1
+        except:
+            print("Error during the conversiton of the data over the page", i, "of the manuscript",
+                  ark, "in dataframe")
+            logfile.write("Error during the conversiton of the data over the page " + str(i) + " of the manuscript " +
+                          ark + " in dataframe\n")
+            i += 1
     return list_df
 
 
@@ -344,13 +351,16 @@ def define_side(image_file_name):
     Returns the side recto or verso of a page from
     its image file name
     '''
-    side = re.search("[rv]", image_file_name)
-    if not side:
-      return "inconnu"
-    elif side.group(0) == "r":
-      return "recto"
-    else:
-      return "verso"
+    try:
+        page = re.search("page\d{3}", image_file_name)
+        num = re.search("\d{3}", page.group(0))
+        inum = int(num.group(0))
+        if inum % 2 == 0:
+            return "verso"
+        else:
+            return "recto"
+    except:
+        return "unknown"
 
 
 def dict_line(data, df, side):
@@ -395,28 +405,36 @@ def dict_line(data, df, side):
         data['prop_black_space'].append(prop_black)
 
 
-def df_pages(list_page_lines_info, list_raw_images):
+def df_pages(ark, list_page_lines_info, list_raw_images, logfile):
     '''
     List[] * List[] -> pandas.DataFrame
     Returns the dataframe of the pages from the list
     of dataframes which contains the calculted informations
     over the page's lines
     '''
+    i = 1
     data = dict()
     for page_lines_info, image in zip(list_page_lines_info, list_raw_images):
-        dict_line(data, page_lines_info, define_side(image))
+        try:
+            print(image, type(image))
+            dict_line(data, page_lines_info, define_side(image))
+            i += 1
+        except:
+            print("Error during the treatement of the page", i, "of the manuscript", ark)
+            logfile.write("Error during the treatement of the page " + i + " of the manuscript " + ark + "\n")
+            i += 1
     data_page = pd.DataFrame(data)
     return data_page
 
 
-def page_data_analysis(path, ark, list_PAGE_dict, list_raw_images):
+def page_data_analysis(path, ark, list_PAGE_dict, list_raw_images, logfile):
     '''
     str * List[Dict[]] * List -> None
     '''
     name = path + ark + "_page_data.csv"
-    list_textlines_coords = list_df_textlines_coords(list_PAGE_dict)
+    list_textlines_coords = list_df_textlines_coords(ark, list_PAGE_dict, logfile)
     list_page_lines_info = list_df_textlines_info(list_PAGE_dict, list_textlines_coords)
-    pages = df_pages(list_page_lines_info, list_raw_images)
+    pages = df_pages(ark, list_page_lines_info, list_raw_images, logfile)
     pages.to_csv(name, sep=';', header=True, index=True, encoding='utf-8')
 
 
@@ -432,7 +450,7 @@ def main_page_analysis(path, data_dict, logfile_analysis):
                 path_images = path + "images/" + ark + "/reframed/"
                 data_ark = data_dict[ark]
                 list_raw_images = [img for img in os.listdir(path_images) if not os.path.isdir(path_images + img)]
-                page_data_analysis(path_df, ark, data_ark, list_raw_images)
+                page_data_analysis(path_df, ark, data_ark, list_raw_images, logfile)
             except:
                 print("Error during treatment of the manuscript", ark)
                 logfile.write("Error during treatment of the manuscript " + ark + "\n")
