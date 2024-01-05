@@ -82,7 +82,8 @@ def getfile_ark_and_write(ark, logfile, direct):
             create_directory(path)
             to_ark = ark.replace("_", "/", 1)
             for i in range(1, get_number_pages(ark) + 1):
-                url = "https://gallica.bnf.fr/ark:/" + to_ark + "/f" + str(i) + ".item/.jpeg"
+                #url = "https://gallica.bnf.fr/ark:/" + to_ark + "/f" + str(i) + ".item/.jpeg"
+                url = "https://gallica.bnf.fr/iiif/ark:/" + to_ark + "/f" + str(i) + "/full/full/0/native.jpg"
                 image_name = ark + "page" + page_number_to_str(i)
                 destination_path = os.path.join(path, f'{image_name}.jpeg')
                 download_image_file(url, destination_path)
