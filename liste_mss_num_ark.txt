@@ -1,0 +1,193 @@
+latin+544(ark:/12148/cc61991j);https://gallica.bnf.fr/ark:/12148/btv1b90666019
+latin+817(ark:/12148/cc62277h);https://gallica.bnf.fr/ark:/12148/btv1b9066592s
+latin+1093(ark:/12148/cc590142);https://gallica.bnf.fr/ark:/12148/btv1b9067726s
+latin+2740(ark:/12148/cc60539d);aucun lien vers une numérisation
+latin+3011(ark:/12148/cc60848w);https://gallica.bnf.fr/ark:/12148/btv1b9076534m
+latin+3011(ark:/12148/cc60848w);https://gallica.bnf.fr/ark:/12148/btv1b9076534m
+latin+3011(ark:/12148/cc60848w);https://gallica.bnf.fr/ark:/12148/btv1b9076534m
+latin+3652(ark:/12148/cc61602d);http://gallica.bnf.fr/ark:/12148/btv1b100740347
+latin+3899(ark:/12148/cc626186);http://gallica.bnf.fr/ark:/12148/btv1b10073306p
+latin+4831(ark:/12148/cc63706t);aucun lien vers une numérisation
+latin+5543(ark:/12148/cc64506m);https://gallica.bnf.fr/ark:/12148/btv1b10502052p
+latin+6401(ark:/12148/cc654850);https://gallica.bnf.fr/ark:/12148/btv1b105096135
+latin+6620(ark:/12148/cc657297);https://gallica.bnf.fr/ark:/12148/btv1b9078366h
+latin+6639(ark:/12148/cc65749n);https://gallica.bnf.fr/ark:/12148/btv1b9068404g
+latin+7039(ark:/12148/cc662093);aucun lien vers une numérisation
+latin+7096(ark:/12148/cc66271m);http://gallica.bnf.fr/ark:/12148/btv1b10033829h
+latin+7181(ark:/12148/cc66361k);https://gallica.bnf.fr/ark:/12148/btv1b9068419x
+latin+7182(ark:/12148/cc66362t);https://gallica.bnf.fr/ark:/12148/btv1b10547735t
+latin+7183(ark:/12148/cc663632);https://gallica.bnf.fr/ark:/12148/btv1b90684173
+latin+7184(ark:/12148/cc663649);http://gallica.bnf.fr/ark:/12148/btv1b10033827m
+latin+7185(ark:/12148/cc66365j);http://gallica.bnf.fr/ark:/12148/btv1b9072601b
+latin+7185(ark:/12148/cc66365j);http://gallica.bnf.fr/ark:/12148/btv1b9072601b
+latin+7185(ark:/12148/cc66365j);http://gallica.bnf.fr/ark:/12148/btv1b9072601b
+latin+7186(ark:/12148/cc66366s);http://gallica.bnf.fr/ark:/12148/btv1b100337366
+latin+7187(ark:/12148/cc663671);http://gallica.bnf.fr/ark:/12148/btv1b105446396
+latin+7188(ark:/12148/cc663688);http://gallica.bnf.fr/ark:/12148/btv1b10034403t
+latin+7189(ark:/12148/cc66369h);http://gallica.bnf.fr/ark:/12148/btv1b10034466n
+latin+7194(ark:/12148/cc66375r);http://gallica.bnf.fr/ark:/12148/btv1b10035380r
+latin+7195(ark:/12148/cc663760);http://gallica.bnf.fr/ark:/12148/btv1b10025367r
+latin+7196(ark:/12148/cc663777);https://gallica.bnf.fr/ark:/12148/btv1b525088110
+latin+7196(ark:/12148/cc663777);https://gallica.bnf.fr/ark:/12148/btv1b525088110
+latin+7196(ark:/12148/cc663777);https://gallica.bnf.fr/ark:/12148/btv1b525088110
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7197(ark:/12148/cc66378g);http://gallica.bnf.fr/ark:/12148/btv1b52514099s
+latin+7198(ark:/12148/cc66379q);https://gallica.bnf.fr/ark:/12148/btv1b90769162
+latin+7215(ark:/12148/cc663994);https://gallica.bnf.fr/ark:/12148/btv1b9066183f
+latin+7215(ark:/12148/cc663994);https://gallica.bnf.fr/ark:/12148/btv1b9066183f
+latin+7221(ark:/12148/cc66406q);http://gallica.bnf.fr/ark:/12148/btv1b10035289d
+latin+7287(ark:/12148/cc66483n);http://gallica.bnf.fr/ark:/12148/btv1b525140414
+latin+7292(ark:/12148/cc664893);http://gallica.bnf.fr/ark:/12148/btv1b525141760
+latin+7294(ark:/12148/cc66492m);https://gallica.bnf.fr/ark:/12148/btv1b90779045
+latin+7298(ark:/12148/cc66497t);https://gallica.bnf.fr/ark:/12148/btv1b10721165n
+latin+7298(ark:/12148/cc66497t);https://gallica.bnf.fr/ark:/12148/btv1b10721165n
+latin+7352(ark:/12148/cc66560p);http://gallica.bnf.fr/ark:/12148/btv1b10034471t
+latin+7359(ark:/12148/cc66569v);https://gallica.bnf.fr/ark:/12148/btv1b9068289w
+latin+7359(ark:/12148/cc66569v);https://gallica.bnf.fr/ark:/12148/btv1b9068289w
+latin+7360(ark:/12148/cc66570w);http://gallica.bnf.fr/ark:/12148/btv1b100352739
+latin+7363(ark:/12148/cc66573m);http://gallica.bnf.fr/ark:/12148/btv1b100344728
+latin+7364(ark:/12148/cc66574v);http://gallica.bnf.fr/ark:/12148/btv1b10033789m
+latin+7365(ark:/12148/cc665753);https://gallica.bnf.fr/ark:/12148/btv1b10032355q
+latin+7366(ark:/12148/cc66576b);https://gallica.bnf.fr/ark:/12148/btv1b9067095m
+latin+7368(ark:/12148/cc66578t);https://gallica.bnf.fr/ark:/12148/btv1b9076912d
+latin+7368(ark:/12148/cc66578t);https://gallica.bnf.fr/ark:/12148/btv1b9076912d
+latin+7381(ark:/12148/cc66596r);https://gallica.bnf.fr/ark:/12148/btv1b9077971k
+latin+7381(ark:/12148/cc66596r);https://gallica.bnf.fr/ark:/12148/btv1b9077971k
+latin+7412(ark:/12148/cc666307);https://gallica.bnf.fr/ark:/12148/btv1b9067894z
+latin+7416(ark:/12148/cc666346);https://gallica.bnf.fr/ark:/12148/btv1b90769058
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7421(ark:/12148/cc66644d);https://gallica.bnf.fr/ark:/12148/btv1b9067047j
+latin+7428(ark:/12148/cc66651w);aucun lien vers une numérisation
+latin+7437(ark:/12148/cc66660v);http://gallica.bnf.fr/ark:/12148/btv1b10036615k
+latin+7437(ark:/12148/cc66660v);http://gallica.bnf.fr/ark:/12148/btv1b10036615k
+latin+7443(ark:/12148/cc666669);http://gallica.bnf.fr/ark:/12148/btv1b52515212f
+latin+7460(ark:/12148/cc666886);https://gallica.bnf.fr/ark:/12148/btv1b90808735
+latin+7475(ark:/12148/cc94612b);https://gallica.bnf.fr/ark:/12148/btv1b84900936
+latin+7475(ark:/12148/cc94612b);https://gallica.bnf.fr/ark:/12148/btv1b84900936
+latin+7475(ark:/12148/cc94612b);https://gallica.bnf.fr/ark:/12148/btv1b84900936
+latin+7475(ark:/12148/cc94612b);https://gallica.bnf.fr/ark:/12148/btv1b84900936
+latin+7477(ark:/12148/cc66707g);http://gallica.bnf.fr/ark:/12148/btv1b100344745
+latin+8091(ark:/12148/cc67352r);https://gallica.bnf.fr/ark:/12148/btv1b90666605
+latin+8247(ark:/12148/cc67517g);https://gallica.bnf.fr/ark:/12148/btv1b90779898
+latin+8445(ark:/12148/cc677232);http://gallica.bnf.fr/ark:/12148/btv1b10035276n
+latin+8445(ark:/12148/cc677232);http://gallica.bnf.fr/ark:/12148/btv1b10035276n
+latin+8812(ark:/12148/cc681324);http://gallica.bnf.fr/ark:/12148/btv1b10033284g
+latin+9335(ark:/12148/cc77377g);http://gallica.bnf.fr/ark:/12148/btv1b52519760w
+latin+10245(ark:/12148/cc719845);aucun lien vers une numérisation
+latin+10246(ark:/12148/cc71985d);https://gallica.bnf.fr/ark:/12148/btv1b6000706k
+latin+10251(ark:/12148/cc71987w);http://gallica.bnf.fr/ark:/12148/btv1b9068303q
+latin+10252(ark:/12148/cc719884);https://gallica.bnf.fr/ark:/12148/btv1b9066954g
+latin+10252(ark:/12148/cc719884);https://gallica.bnf.fr/ark:/12148/btv1b9066954g
+latin+10252(ark:/12148/cc719884);https://gallica.bnf.fr/ark:/12148/btv1b9066954g
+latin+10252(ark:/12148/cc719884);https://gallica.bnf.fr/ark:/12148/btv1b9066954g
+latin+10252(ark:/12148/cc719884);https://gallica.bnf.fr/ark:/12148/btv1b9066954g
+latin+10252(ark:/12148/cc719884);https://gallica.bnf.fr/ark:/12148/btv1b9066954g
+latin+10253(ark:/12148/cc71989c);http://gallica.bnf.fr/ark:/12148/btv1b100352773
+latin+10254(ark:/12148/cc71990d);aucun lien vers une numérisation
+latin+10266(ark:/12148/cc72001c);http://gallica.bnf.fr/ark:/12148/btv1b525140916
+latin+10266(ark:/12148/cc72001c);http://gallica.bnf.fr/ark:/12148/btv1b525140916
+latin+10516(ark:/12148/cc722342);aucun lien vers une numérisation
+latin+11241(ark:/12148/cc728560);https://gallica.bnf.fr/ark:/12148/btv1b90682961
+latin+11242(ark:/12148/cc728577);https://gallica.bnf.fr/ark:/12148/btv1b9068297f
+latin+11243(ark:/12148/cc72858g);http://gallica.bnf.fr/ark:/12148/btv1b52515005m
+latin+11244(ark:/12148/cc72859q);aucun lien vers une numérisation
+latin+12958(ark:/12148/cc124909j);https://gallica.bnf.fr/ark:/12148/btv1b10548533h
+latin+13009(ark:/12148/cc741306);http://gallica.bnf.fr/ark:/12148/btv1b90683593
+latin+13020(ark:/12148/cc74141n);http://gallica.bnf.fr/ark:/12148/btv1b10034559z
+latin+13955(ark:/12148/cc125315m);https://gallica.bnf.fr/ark:/12148/btv1b9066978w
+latin+14064(ark:/12148/cc74908w);http://gallica.bnf.fr/ark:/12148/btv1b9068385k
+latin+14065(ark:/12148/cc749094);http://gallica.bnf.fr/ark:/12148/btv1b525169004
+latin+14067(ark:/12148/cc74911d);https://gallica.bnf.fr/ark:/12148/btv1b9077826d
+latin+14068(ark:/12148/cc74912n);http://gallica.bnf.fr/ark:/12148/btv1b10035278j
+latin+14070(ark:/12148/cc749144);http://gallica.bnf.fr/ark:/12148/btv1b100352790
+latin+14070(ark:/12148/cc749144);http://gallica.bnf.fr/ark:/12148/btv1b100352790
+latin+14080(ark:/12148/cc74921m);https://gallica.bnf.fr/ark:/12148/btv1b90778250
+latin+14809(ark:/12148/cc75554d);http://gallica.bnf.fr/ark:/12148/btv1b10035264b
+latin+14926(ark:/12148/cc75655t);http://gallica.bnf.fr/ark:/12148/btv1b10035265s
+latin+15118(ark:/12148/cc75829h);https://gallica.bnf.fr/ark:/12148/btv1b90768211
+latin+15119(ark:/12148/cc75830j);http://gallica.bnf.fr/ark:/12148/btv1b100357770
+latin+15120(ark:/12148/cc75831s);aucun lien vers une numérisation
+latin+15121(ark:/12148/cc758321);aucun lien vers une numérisation
+latin+15122(ark:/12148/cc758338);https://gallica.bnf.fr/ark:/12148/btv1b9076721p
+latin+15129(ark:/12148/cc75840r);http://gallica.bnf.fr/ark:/12148/btv1b10034338x
+latin+15171(ark:/12148/cc758822);https://gallica.bnf.fr/ark:/12148/btv1b9066788k
+latin+15171(ark:/12148/cc758822);https://gallica.bnf.fr/ark:/12148/btv1b9066788k
+latin+15461(ark:/12148/cc76117r);http://gallica.bnf.fr/ark:/12148/btv1b525199022
+latin+16198(ark:/12148/cc76671d);https://gallica.bnf.fr/ark:/12148/btv1b90671704
+latin+16201(ark:/12148/cc766744);aucun lien vers une numérisation
+latin+16202(ark:/12148/cc76675c);http://gallica.bnf.fr/ark:/12148/btv1b10035267p
+latin+16290(ark:/12148/cc76761c);http://gallica.bnf.fr/ark:/12148/btv1b100352684
+latin+16609(ark:/12148/cc770374);http://gallica.bnf.fr/ark:/12148/btv1b52509576x
+latin+16644(ark:/12148/cc770658);http://gallica.bnf.fr/ark:/12148/btv1b10034347w
+latin+16649(ark:/12148/cc770708);https://gallica.bnf.fr/ark:/12148/btv1b90726517
+latin+16655(ark:/12148/cc77076q);http://gallica.bnf.fr/ark:/12148/btv1b10034477h
+latin+16709(ark:/12148/cc77130m);https://gallica.bnf.fr/ark:/12148/btv1b9067670v
+latin+17858(ark:/12148/cc68847r);http://gallica.bnf.fr/ark:/12148/btv1b10020321p
+latin+17858(ark:/12148/cc68847r);http://gallica.bnf.fr/ark:/12148/btv1b10020321p
+latin+18507(ark:/12148/cc89235);aucun lien vers une numérisation
+latin+18518(ark:/12148/cc69308f);aucun lien vers une numérisation
+latin+7295(ark:/12148/cc66493v);http://gallica.bnf.fr/ark:/12148/btv1b100246322
+latin+7295(ark:/12148/cc66493v);http://gallica.bnf.fr/ark:/12148/btv1b100246322
+latin+7352(ark:/12148/cc66560p);http://gallica.bnf.fr/ark:/12148/btv1b10034471t
+latin+7352(ark:/12148/cc66560p);http://gallica.bnf.fr/ark:/12148/btv1b10034471t
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7377(ark:/12148/cc665881);http://gallica.bnf.fr/ark:/12148/btv1b52519450b
+latin+7378(ark:/12148/cc66592s);aucun lien vers une numérisation
+latin+7378(ark:/12148/cc66592s);aucun lien vers une numérisation
+latin+7416(ark:/12148/cc666346);https://gallica.bnf.fr/ark:/12148/btv1b90769058
+latin+7416(ark:/12148/cc666346);https://gallica.bnf.fr/ark:/12148/btv1b90769058
+latin+7416(ark:/12148/cc666346);https://gallica.bnf.fr/ark:/12148/btv1b90769058
+latin+7416(ark:/12148/cc666346);https://gallica.bnf.fr/ark:/12148/btv1b90769058
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+7420(ark:/12148/cc66641p);http://gallica.bnf.fr/ark:/12148/btv1b10038294m
+latin+8429(ark:/12148/cc67704w);aucun lien vers une numérisation
+latin+8429(ark:/12148/cc67704w);aucun lien vers une numérisation
+latin+8680(ark:/12148/cc67983n);http://gallica.bnf.fr/ark:/12148/btv1b10034475m
+latin+8680(ark:/12148/cc67983n);http://gallica.bnf.fr/ark:/12148/btv1b10034475m
+francais+1339(ark:/12148/cc44220v);https://gallica.bnf.fr/ark:/12148/btv1b9059038x
+francais+2021(ark:/12148/cc48563g);https://gallica.bnf.fr/ark:/12148/btv1b90599188
+francais+2050(ark:/12148/cc48595k);https://gallica.bnf.fr/ark:/12148/btv1b9059434n
+italien+949(ark:/12148/cc100480);http://gallica.bnf.fr/ark:/12148/btv1b10035379c
+italien+1295(ark:/12148/cc10354r);aucun lien vers une numérisation
+italien+1296(ark:/12148/cc103550);aucun lien vers une numérisation
+NAL+75(ark:/12148/cc71448f);http://gallica.bnf.fr/ark:/12148/btv1b10035269k
+NAL+625(ark:/12148/cc713343);http://gallica.bnf.fr/ark:/12148/btv1b10033543h
+NAL+657(ark:/12148/cc713666);http://gallica.bnf.fr/ark:/12148/btv1b10035270z
+NAL+657(ark:/12148/cc713666);http://gallica.bnf.fr/ark:/12148/btv1b10035270z
+NAL+1173(ark:/12148/cc69563t);http://gallica.bnf.fr/ark:/12148/btv1b10032468v
+NAL+1173(ark:/12148/cc69563t);http://gallica.bnf.fr/ark:/12148/btv1b10032468v
+NAL+1614(ark:/12148/cc69939b);http://gallica.bnf.fr/ark:/12148/btv1b100325759
+NAL+1893(ark:/12148/cc701953);http://gallica.bnf.fr/ark:/12148/btv1b10033705h
+NAL+1893(ark:/12148/cc701953);http://gallica.bnf.fr/ark:/12148/btv1b10033705h
+NAL+3044(ark:/12148/cc70920t);http://gallica.bnf.fr/ark:/12148/btv1b10035272v
+NAF+4140(ark:/12148/cc401438);http://gallica.bnf.fr/ark:/12148/btv1b53256001t
+NAF+4516(ark:/12148/cc78522q/ca59930005564172);https://gallica.bnf.fr/ark:/12148/btv1b84557895
+NAF+4666(ark:/12148/cc40532h);aucun lien vers une numérisation
+NAF+4666(ark:/12148/cc40532h);aucun lien vers une numérisation
+NAF+10259(ark:/12148/cc4797h);http://gallica.bnf.fr/ark:/12148/btv1b10084216c
+NAF+10259(ark:/12148/cc4797h);http://gallica.bnf.fr/ark:/12148/btv1b10084216c
+NAF+22157(ark:/12148/cc7104t);aucun lien vers une numérisation
+NAF+22157(ark:/12148/cc7104t);aucun lien vers une numérisation
+NAF+22157(ark:/12148/cc7104t);aucun lien vers une numérisation
