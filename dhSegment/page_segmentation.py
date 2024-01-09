@@ -26,7 +26,7 @@ def organise_models_dirs(root, logfile):
     of the models
     '''
     try:
-        path_dhs = root + "dhsegment/"
+        path_dhs = root + "dhSegment/"
         if not os.path.exists(path_dhs):
             os.makedirs(path_dhs)
     except:
@@ -134,7 +134,7 @@ def get_page_coords_corpus(path, list_ark, model_page, logfile):
     '''
     corpus = dict()
     for ark in list_ark:
-        path_ark = path + "images/" + ark + "/reframed/"
+        path_ark = path + "img/" + ark + "/reframed/"
         list_raw_images = [path_ark + page for page in os.listdir(path_ark) if not os.path.isdir(path_ark + page)]
         list_images, list_page_coords = get_page_coords_ms(ark, list_raw_images, model_page, logfile)
         if corpus == dict():
@@ -391,8 +391,8 @@ def main_segmentation(path, logfile_path):
     '''
     with open(logfile_path, 'a') as logfile:
         organise_models_dirs(path, logfile)
-        path_dhs = path + "dhsegment/"
-        list_ark = [ark for ark in os.listdir(path + "images/") if os.path.isdir(path + "images/") and ark != '.ipynb_checkpoints']
+        path_dhs = path + "dhSegment/"
+        list_ark = [ark for ark in os.listdir(path + "img/") if os.path.isdir(path + "img/") and ark != '.ipynb_checkpoints']
 
         # Opening of the tensorflow session for the page model
         sess, model_page = open_model_page_session(path_dhs + "model/", logfile)
