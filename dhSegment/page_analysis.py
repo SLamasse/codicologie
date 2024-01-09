@@ -444,10 +444,10 @@ def main_page_analysis(path, data_dict, logfile_analysis):
     '''
     with open(logfile_analysis, 'a') as logfile:
         path_df = path + "resultats/"
-        list_ark = [ark for ark in os.listdir(path + "images/") if os.path.isdir(path + "images/" + ark) and ark != ".ipynb_checkpoints"]
+        list_ark = [ark for ark in os.listdir(path + "img/") if os.path.isdir(path + "img/" + ark) and ark != ".ipynb_checkpoints"]
         for ark in list_ark:
             try:
-                path_images = path + "images/" + ark + "/reframed/"
+                path_images = path + "img/" + ark + "/reframed/"
                 data_ark = data_dict[ark]
                 list_raw_images = [img for img in os.listdir(path_images) if not os.path.isdir(path_images + img)]
                 page_data_analysis(path_df, ark, data_ark, list_raw_images, logfile)
