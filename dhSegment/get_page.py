@@ -104,7 +104,7 @@ def main_fetch_images(chemin, src, logfile_path):
     with open(logfile_path, 'a') as logfile:
         with open(os.path.join(chemin, src), 'r') as csvfile:
             already_seen = set()
-            path_images = chemin + "images/"
+            path_images = chemin + "img/"
             if not os.path.exists(path_images):
                 os.makedirs(path_images)
             reader = csv.reader(csvfile, delimiter=';')
