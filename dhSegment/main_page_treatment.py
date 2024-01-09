@@ -22,7 +22,7 @@ main_fetch_images(files_path, "test_en_ligne.txt", logfile_fetch)
 
 # Redimensionnement des images
 logfile_reframed = files_path + "log/mss_not_reframed.txt"
-main_crop(files_path + "images/", logfile_reframed)
+main_crop(files_path + "img/", logfile_reframed)
 
 # Segmentation des pages avec dhSegment et analyse des donnees
 logfile_segmentation = files_path + "log/segmentation_failed.txt"
