@@ -31,12 +31,12 @@ for elt in list_rep(path_image):
   for pg in fichiers:
     print(pg)
 
-image_filename = '/content/images/page05.jpeg'
-im=Image.open(image_filename)
-bw_im = binarization.nlbin(im)
-seg = pageseg.segment(bw_im)
-seg_model = vgsl.TorchVGSLModel.load_model(model_path)
-baseline_seg = blla.segment(im, model = seg_model)
-alto = serialization.serialize_segmentation(baseline_seg, image_name=im.filename, image_size=im.size, template='alto')
+#image_filename = '/content/images/page05.jpeg'
+#im=Image.open(image_filename)
+#bw_im = binarization.nlbin(im)
+#seg = pageseg.segment(bw_im)
+#seg_model = vgsl.TorchVGSLModel.load_model(model_path)
+#baseline_seg = blla.segment(im, model = seg_model)
+#alto = serialization.serialize_segmentation(baseline_seg, image_name=im.filename, image_size=im.size, template='alto')
 
 
