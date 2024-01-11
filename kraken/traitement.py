@@ -1,9 +1,10 @@
+import os
 import kraken
 import kraken.binarization
 # pageseg is the library from pagesegmentation
 from kraken import binarization, pageseg
 from PIL import Image
-from google.colab import files
+
 
 
 path_image = "../img"
