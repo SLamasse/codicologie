@@ -1,3 +1,4 @@
+import os
 import withkraken as k
 import alto_to_csv  as a
 import pandas as pd
@@ -11,11 +12,22 @@ k.segmentation_alto(path_image,path_out_alto)
 
 #on traite tous les xml alto pour en extraire un tableau par manuscrit qui sera das "resultats"
 path_resultat = "resultats"
-rep = [f for f in os.listdir(path_out_alto) if os.path.isfile(os.path.join(path_out_alto, f))]
 
-for elt in rep :
+
+
+def list_rep(rootdir):
+  list_dir = []
+  for rep in os.listdir(rootdir) :
+    d = os.path.join(rootdir + "/" + rep)
+    if os.path.isdir(d):
+        list_dir.append(rep)
+  return list_dir
+
+
+for elt in list_rep(path_out_alto) :
     data = dict()
-    a.extract_data_manuscript(elt, data)
+    chemin = path_out_alto + "/" + elt + "/"
+    a.extract_data_manuscript(chemin, data)
     df = pd.DataFrame(data)
     outfile = path_resultat + "/" + elt + ".csv"
     df.to_csv(outfile, index=False)
