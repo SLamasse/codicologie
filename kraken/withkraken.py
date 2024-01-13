@@ -33,11 +33,12 @@ def segmentation_alto(path_image,path_out_alto):
             image_filename = tmp_dir + "/" + pg
             try :
                 im=Image.open(image_filename)
-                bw_im = binarization.nlbin(im)
-                seg = pageseg.segment(bw_im)
+                #bw_im = binarization.nlbin(im)
+                #seg = pageseg.segment(bw_im)
                 seg_model = vgsl.TorchVGSLModel.load_model(model_path)
                 baseline_seg = blla.segment(im, model = seg_model)
                 alto = serialization.serialize_segmentation(baseline_seg, image_name=image_filename, image_size=im.size, template='alto')
+
                 # On test si le reptoire de résultat a été crée pour y déposer les fichier alto ou non
                 dirout = path_out_alto + "/" + elt + "/"
                 if os.path.isdir(dirout):
@@ -50,7 +51,7 @@ def segmentation_alto(path_image,path_out_alto):
                     fp.write(alto)
                 i += 1
             except:
-                print("Le fichier" + elt + " n'a pas été traité")
+                print("La page" + pg + " n'a pas été traité")
                 pass
 
     return
