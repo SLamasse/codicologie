@@ -25,13 +25,13 @@ def list_rep(rootdir):
 
 def segmentation_alto(path_image,path_out_alto):
     for elt in list_rep(path_image):
-        try:
-            thepath = os.path.join(path_image + "/" + elt)
-            tmp_dir = thepath + "/reframed"
-            fichiers = [f for f in os.listdir(tmp_dir) if os.path.isfile(os.path.join(tmp_dir, f))]
-            i = 0
-            for pg in fichiers:
-                image_filename = tmp_dir + "/" + pg
+        thepath = os.path.join(path_image + "/" + elt)
+        tmp_dir = thepath + "/reframed"
+        fichiers = [f for f in os.listdir(tmp_dir) if os.path.isfile(os.path.join(tmp_dir, f))]
+        i = 0
+        for pg in fichiers:
+            image_filename = tmp_dir + "/" + pg
+            try :
                 im=Image.open(image_filename)
                 bw_im = binarization.nlbin(im)
                 seg = pageseg.segment(bw_im)
@@ -49,9 +49,9 @@ def segmentation_alto(path_image,path_out_alto):
                 with open(output_xml, 'w') as fp:
                     fp.write(alto)
                 i += 1
-        except:
-            print("Le fichier" + elt + " n'a pas été traité")
-            pass
+            except:
+                print("Le fichier" + elt + " n'a pas été traité")
+                pass
 
     return
 
