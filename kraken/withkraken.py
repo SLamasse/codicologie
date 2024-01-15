@@ -29,8 +29,8 @@ def process_image(image_filename, output_xml):
 
 def segmentation_alto(path_image, path_out_alto):
     for elt in list_rep(path_image):
-        thepath = os.path.join(path_image, elt)
-        tmp_dir = os.path.join(thepath, "reframed")
+        thepath = os.path.join(path_image, "/", elt)
+        tmp_dir = os.path.join(thepath, "/", "reframed")
         fichiers = [f for f in os.listdir(tmp_dir) if os.path.isfile(os.path.join(tmp_dir, f))]
 
         for page_count, pg in enumerate(fichiers, start=1):
