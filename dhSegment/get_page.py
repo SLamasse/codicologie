@@ -113,7 +113,7 @@ def main_fetch_images(chemin, src, logfile_path):
                     if row[0] not in already_seen:
                         if row[1] != "0" and row[1] != "aucun lien vers une numérisation":
                             # manipulation un peu idiote liée au fichier initiale
-                            ark = re.sub("^https:\/\/gallica\.bnf\.fr\/ark:\/(.+)\/", "\\1_", row[1])
+                            ark = re.sub("^https*:\/\/gallica\.bnf\.fr\/ark:\/(.+)\/", "\\1_", row[1])
                             getfile_ark_and_write(ark, logfile, path_images)
                         else:
                             print(f"Le manuscrit {row[0]} dont l'ARK est {row[1]} n'a pas pu être téléchargé")
