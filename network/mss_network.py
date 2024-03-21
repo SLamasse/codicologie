@@ -102,9 +102,9 @@ def connexion_bd():
     Returns the cursors object for the connection
     to the relationnal data base
     '''
-    myUser = 'root'
-    myPassword = 'root'
-    Host = '127.0.0.1'
+    myUser = 'user'
+    myPassword = 'pw'
+    Host = 'host'
     database = 'data_bnf'
 
     connection = pymysql.connect(host=Host,
@@ -470,7 +470,7 @@ def main_network(query, numerical_variables, files_path):
 
 
 query = """
-SELECT pressmark, order_in_ms, AVG(prop_up_space) AS 'prop_up_space', AVG(prop_down_space) AS 'prop_down_space', AVG(prop_ext_space) AS 'prop_ext_space', AVG(prop_int_space) AS 'prop_int_space', AVG(prop_black_space) AS 'prop_black_space', MAX(presence_annotations) AS 'presence_annotations', MAX(city) AS 'city', MAX(library) AS 'library', MAX(theme) AS 'theme', MAX(title) AS 'title'
+SELECT pressmark, order_in_ms, AVG(prop_up_space) AS 'prop_up_space', AVG(prop_down_space) AS 'prop_down_space', AVG(prop_ext_space) AS 'prop_ext_space', AVG(prop_int_space) AS 'prop_int_space', AVG(prop_black_space) AS 'prop_black_space', ROUND(AVG(nbr_columns), 0) AS 'nbr_columns', ROUND(AVG(nbr_lines), 0) AS 'nbr_lines', MAX(presence_annotations) AS 'presence_annotations', MAX(city) AS 'city', MAX(library) AS 'library', MAX(theme) AS 'theme', MAX(title) AS 'title'
 FROM pages
 GROUP BY pressmark, order_in_ms
 ORDER BY pressmark, order_in_ms
