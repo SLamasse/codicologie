@@ -102,9 +102,9 @@ def connexion_bd():
     Returns the cursors object for the connection
     to the relationnal data base
     '''
-    myUser = 'user'
-    myPassword = 'pw'
-    Host = 'host'
+    myUser = '___USER___'
+    myPassword = '___PASSWORD___'
+    Host = '___HOST___'
     database = 'data_bnf'
 
     connection = pymysql.connect(host=Host,
@@ -132,17 +132,18 @@ def constuct_dictBT(query):
     return dict_tree
 
 
-def comp_dict(data1, data2):
+def comp_dict(data1, data2, not_in_account):
     '''
-    Dict[str, T] * Dict[str, T] -> int
+    Dict[str, T] * Dict[str, T] * Set[str] -> int
     Returns the number of equal modality for each
     variable of data1 and data2
     '''
     cpt = 0
     for (k1, v1), (k2, v2) in zip(data1.items(), data2.items()):
-        if k1 == k2:
-            if v1 == v2:
-                cpt += 1
+        if k1 not in not_in_account and k2 not in not_in_account:
+            if k1 == k2:
+                if v1 == v2:
+                    cpt += 1
     return cpt
 
 
@@ -216,35 +217,35 @@ def jnb_for_variables_list(t, var_list, classes_nb):
         jenks_natural_breaks(t, var, classes_nb)
 
 
-def construct_edges(id, data, t):
+def construct_edges(id, data, t, not_in_account):
     '''
-    dictBT -> Dict[Tuple[int, int], int]
+    int * dictBT * dictBT * Set[str] -> Dict[Tuple[int, int], int]
     Returns the dictionnary with all the edges and its
     valuation given id and data
     '''
     if not t or id == t.id():
         return dict()
-    data_edges = fusion_dict(construct_edges(id, data, t.lst),
-                             construct_edges(id, data, t.rst))
+    data_edges = fusion_dict(construct_edges(id, data, t.lst, not_in_account),
+                             construct_edges(id, data, t.rst, not_in_account))
     if (t.id(), id) not in data_edges:
         if data_edges == dict():
-            data_edges = {(id, t.id()): comp_dict(data, t.data())}
+            data_edges = {(id, t.id()): comp_dict(data, t.data(), not_in_account)}
         else:
-            data_edges[(id, t.id())] = comp_dict(data, t.data())
+            data_edges[(id, t.id())] = comp_dict(data, t.data(), not_in_account)
     return data_edges
 
 
-def construct_all_edges(t, t_ref):
+def construct_all_edges(t, t_ref, not_in_account):
     '''
-    dictBT -> Dict[Tuple[int, int], int]
+    dictBT * dictBT -> Dict[Tuple[int, int], int]
     Returns the dictionnary of all the edges
     given t and t_ref
     '''
     if not t:
         return dict()
-    return fusion_dict(construct_edges(t.id(), t.data(), t_ref),
-                       fusion_dict(construct_all_edges(t.lst, t_ref),
-                                   construct_all_edges(t.rst, t_ref)))
+    return fusion_dict(construct_edges(t.id(), t.data(), t_ref, not_in_account),
+                       fusion_dict(construct_all_edges(t.lst, t_ref, not_in_account),
+                                   construct_all_edges(t.rst, t_ref, not_in_account)))
 
 
 def decile(L):
@@ -349,9 +350,12 @@ def plot_network_with_clusters(G, clusters_dict):
     norm = mpl.colors.BoundaryNorm(bounds, cmap.N)
 
     pos = nx.fruchterman_reingold_layout(G, dim=2)
+    #pos = nx.kamada_kawai_layout(G)
     nx.draw_networkx_edges(G, pos, alpha=0.4)
+    #labels = {node: str(node) for node in G.nodes()}
     nx.draw_networkx_nodes(G, pos=pos, node_size=20, node_color=colors, cmap=cmap)
-
+    #nx.draw_networkx_labels(G, pos, labels, font_color='red', horizontalalignment='left')
+    
     plt.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), ticks=ticks)
     plt.axis('off')
     plt.show()
@@ -456,10 +460,11 @@ def main_network(query, numerical_variables, files_path):
     data_file_path = files_path + 'resultats2.csv'
     matrix_file_path = files_path + 'adjacency_matrix.csv'
     indicators_file_path = files_path + 'graph_indicators.csv'
+    not_in_account = {'pressmark', 'order_in_ms', 'city', 'library', 'theme', 'title'}
     t = constuct_dictBT(query)
     jnb_for_variables_list(t, numerical_variables, 5)
     nodes = convert_dictAB(t)
-    edges = construct_all_edges(t, t)
+    edges = construct_all_edges(t, t, not_in_account)
     G = create_network(nodes, edges)
     dc = louvain_clustering(G)
     plot_network_with_clusters(G, dc)
@@ -478,6 +483,6 @@ ORDER BY pressmark, order_in_ms
 
 lnv = ['prop_up_space', 'prop_down_space', 'prop_ext_space', 'prop_int_space', 'prop_black_space']
 
-file_path = './alto_version/resultats_clustering/'
+file_path = '___PATH___'
 
 main_network(query, lnv, file_path)
